@@ -1,8 +1,16 @@
 .swiper {
   .swiper-wrapper {
     .swiper-slide {
-      height: 500px;
-      background: green;
+      display: flex;
+      max-height: 500px;
+
+      img {
+        aspect-ratio: 1280 / 720;
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
     }
   }
 }
