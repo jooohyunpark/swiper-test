@@ -1,2 +1,7 @@
-# react-webpack-boilerplate
-React webpack boilerplate
+# swiper-test
+
+## Tech stack
+```
+Swiper V9 
+Webpack V5
+```
