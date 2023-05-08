@@ -9,14 +9,19 @@ import 'swiper/css/pagination'
 import './styles.scss'
 
 // import required modules
-import { Pagination } from 'swiper'
+import { Pagination, Mousewheel } from 'swiper'
 
 export default function App() {
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper
+        pagination={{ type: 'bullets', clickable: true }}
+        mousewheel={{ forceToAxis: true }}
+        modules={[Pagination, Mousewheel]}
+        className="mySwiper"
+      >
         {Array.from({ length: 5 }).map((d, i) => (
-          <SwiperSlide>
+          <SwiperSlide key={i}>
             <img src={`https://picsum.photos/1280?random=${i}`} />
           </SwiperSlide>
         ))}
