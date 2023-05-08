@@ -1,6 +1,6 @@
 # swiper-test
 
-## Tech stack
+## Stack
 ```
 Swiper V9 
 Webpack V5
